@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline</title>
+    <style>
+        body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.no-internet-sign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.no-internet-sign .icon {
+    font-size: 50px;
+    color: #ff5252;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    color: #666;
+}
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="no-internet-sign">
+            <span class="icon"><img width="48" height="48" src="https://img.icons8.com/fluency/48/android-os.png" alt="android-os"/></span>
+            <h1>Offline</h1>
+            <p>You are currently offline. Please check your connection.</p>
+            <button onclick="refreshPage()">Check Connection</button>
+        </div>
+    </div>
+    <script src="./asset/script.js"></script>
+</body>
+
+</html>

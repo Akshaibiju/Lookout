@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AdMob Integration</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=ca-app-pub-7830402081345944/4544770387"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('config', 'ca-app-pub-7830402081345944/4544770387');
+    </script>
+</head>
+<body>
+    <div id="adMobBanner" style="width:320px;height:50px;"></div>
+    <script>
+        (function() {
+            var adMobBanner = document.getElementById('adMobBanner');
+            var adMobScript = document.createElement('script');
+            adMobScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
+            adMobScript.async = true;
+            adMobScript.onload = function() {
+                (adsbygoogle = window.adsbygoogle || []).push({
+                    google_ad_client: "ca-app-pub-7830402081345944/4544770387",
+                    enable_page_level_ads: true
+                });
+            };
+            adMobBanner.appendChild(adMobScript);
+        })();
+    </script>
+</body>
